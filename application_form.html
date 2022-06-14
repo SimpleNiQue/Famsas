@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../../static/css/main.css">
+    <link rel="stylesheet" href="../../../static/css/bootstrap.min.css">
+    <title>APPLY NOW</title>
+    <script type="text/javascript">
+    function validateForm() {
+        // TODO:
+        /*var fname = document.forms['admission-form']['fname'].value;
+        var lname = document.forms['admission-form']['lname'].value;
+        var email = document.forms['admission-form']['email'].value;
+        var studentNo = document.forms['admission-form']['studentNo'].value;
+        if (fname === "" || lname === "" || email === "" || studentNo === "") {
+            alert("All field must be filled");
+            return false;
+
+    }*/
+
+    alert("Form Submitted !!!")
+
+}
+</script>
+</head>
+<body onsubmit="validateForm()">
+
+  <header class="p-3 bg-dark text-white">
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FAMSAS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample05">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./admission.html">Admission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Student Portal</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false">Other Amenities</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                <li><a class="dropdown-item" href="./payment.html">Payments</a></li>
+                <li><a class="dropdown-item" href="#">Boarding Facility</a></li>
+                <li><a class="dropdown-item" href="#">Accomodation and feeding</a></li>
+                <li><a class="dropdown-item" href="#">Students and Lecturers</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+    <main>
+        <form name="admission-form" action="./index.html" method="POST" enctype="multipart/form-data">
+            <font color="green"><caption><h3>STUDENT OPENNING FORM</h3></caption></font> <br>
+            <section class="box-element">
+                <fieldset>
+                    <legend><h5>PERSONAL INFORMATION</h5></legend>
+
+                    <label for="gender" >Gender:
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                    </label><br><br>
+
+                    <label for="firstName"><span id="red">*</span>First Name:</label>
+                    <input type="text" name="firstName" required><br><br>
+                    
+                    <label for="middleName"><span id="red">*</span>Middle Name:</label>
+                    <input type="text" name="middleName" required><br><br>
+
+                    <label for="lastName"><span id="red">*</span>Last Name:</label>
+                    <input type="text" name="lastName" required><br><br>
+
+                   
+                    <label for="DOB"><span id="red">*</span>Date Of Birth:</label>
+                    <input type="date" name="DOB" required><br><br>
+
+
+                    <label for="state"><span id="red">*</span>State of Origin:</label>
+                    <input type="text" name="state"required><br></br>
+
+
+                    <label for="state"><span id="red">*</span>Local Government:</label>
+                    <input type="text" name="text"required><br><br>
+
+
+                    <label for="maritalStatus"><span id="red">*</span>Marital Status:</label>
+                    <input type="radio" name="maritalStatus">Single
+                    <input type="radio" name="maritalStatus">Married
+                    <input type="radio" name="maritalStatus">Others<br><br>
+            
+
+                    <label for="occupation"><span id="red">*</span>Occupation:</label>
+                    <input type="radio" name="gen">Employed
+                    <input type="radio" name="gen">Unemployed
+                    <input type="radio" name="gen">Self-Employed
+                    <input type="radio" name="gen">Student <br><br>
+                    
+                    <label for="address"><span id="red">*</span>Address:</label><br>
+                    <textarea></textarea>
+
+                </fieldset>
+                
+            </section>
+
+
+            <section class="box-element">
+                <fieldset>
+                    <legend><h2>STUDENT DETAILS</h2></legend>
+
+                    <label for="course"><span id="red">*</span>COURSE
+            
+                        <select>
+                            <option></option>
+                            <option>MLT</option>
+                            <option>CHEW</option>
+                            <option>JCHEW</option>
+                            <option>HIMT</option>
+                        </select>
+                    </label>
+
+
+                <label for="entry"><span id="red">*</span>ENTRY:
+
+                    <select>
+                        <option></option>
+                        <option>FALL</option>
+                        <option>SUMMER</option>
+                    </select>
+                </label>
+
+
+                <label for="phoneNumber"><span id="red">*</span>Valid Phone Number:</label>
+                <input type="text"><br><br>
+
+
+                <label for="phoneNumber"><span id="red">*</span>RESULT:
+
+                    <select>
+                        <option></option>
+                        <option>WAEC</option>
+                        <option>NECO</option>
+                        <option>NABTEB</option>
+                    </select>
+
+                </label><br></br>
+
+
+                <label>ENGLISH:<input type="text" required><br></label>
+                <label>MATHS:<input type="text" required><br></label>
+                <label>PHYSICS:<input type="text" required><br></label>
+                <label>CHEMISTRY:<input type="text" required><br></label>
+                <label>BIOLOGY:<input type="text" required><br></label>
+                
+
+                <h4>FILL IN ANY OTHER RELATED SUBJECTS AND GRADE:</h4>
+                    1*
+                    <input type="text"/><br>
+                    2*
+                    <input type="text"/><br>
+                    3*
+                     <input type="text"/><br>
+                    4*
+                    <input type="text"/><br></br>
+
+
+                <label for="disability"><b>Any Physical Disabilities/Medical Condition &quest;</b>
+                    <input type="radio" name="disability">Yes
+                    <input type="radio" name="disability">No<br>
+                </label>
+
+                <b>If Yes please state below:</b><br>
+                <input type="text" name="disability"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="johndoe@gmail.com" required><br>
+
+                <label for="date">Date:</label>
+                <input type="date" name="date" required><br>
+
+                <label for="address">Address:</label><br>
+                <textarea></textarea>
+                <br><br>
+
+
+                </fieldset>
+                
+            </section>
+
+
+
+            <section class="box-element">
+                <fieldset>
+                    <legend><h2>OTHER INFORMATION</h2></legend>
+                    <caption>(Next Of Kin Detail)</caption><br><br>
+
+                    <b>Fill the following with correct details:</b><br><br><br>
+
+                    <label for="firstName"><span id="red">*</span>First Name:
+                        <input type="text" name="firstName" required><br><br>
+                    </label>
+
+                    <label for="lastName"><span id="red">*</span>Last Name:
+                        <input type="text" name="lastName" required><br><br>
+                    </label>
+
+                    <label for="phoneNumber"><span id="red">*</span>Valid Phone Number:
+                        <input type="text" name="phoneNumber" required><br><br>
+                    </label>
+
+             
+                    <label for="address"><span id="red">*</span>Address:
+                        <textarea></textarea>
+                    </label>
+                        
+
+                    <label for="DOB"><span id="red">*</span>Date of Birth:
+                        <input type="text" name="DON" required><br><br>
+                    </label>
+
+                    <input type="submit" class="btn btn btn-success" name="Submit">
+                    <input type="Reset" name="Reset">
+
+                </fieldset>
+                
+            </section>
+
+        </form>
+    </main>
+  
+</body>
+
+</html>
